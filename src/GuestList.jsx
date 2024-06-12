@@ -33,6 +33,7 @@ export function GuestList() {
 
     const removeGuest = (index) => {
       setGuests(currGuests => currGuests.filter((guest, i) => i !== index));
+      toast.error(`${name} supprimé`);
   }
 
   
@@ -65,7 +66,7 @@ export function GuestList() {
                 type="text"
                 value={name} 
                 onChange={handleChange}
-            />
+            /> 
             <button disabled={name.length < 3} onClick={saveGuest}>Add a guest</button>
             {guests.map((guest, i) => (
                 <div key={i} style={{ display: "flex", gap: "10px", flexDirection: "row", alignItems: "center" }}>
