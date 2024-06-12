@@ -1,0 +1,10 @@
+.title-selected {
+    color: darksalmon;
+    font-size: 60px;
+}
+
+.title-failure {
+    color: dodgerblue;
+    background-color: red;
+}
+
